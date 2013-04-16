@@ -5,11 +5,20 @@
 %--------------------------------------------------------
 \documentclass[a4paper,10pt]{report}
 \usepackage{fancyhdr}
-\usepackage{geometry}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 %Seperated files
 %--------------------------------------------------------
 \usepackage{subfiles}
+
+%Standard sti at søge efter billeder
+\usepackage{graphicx}
+\graphicspath{{Figurer/}}
+
+%Speciel skrift for enkelt linje kode
+%Udskriver med fonten 'Courier'
+%Mere info her: http://tex.stackexchange.com/questions/25249/how-do-i-use-a-particular-font-for-a-small-section-of-text-in-my-document
+\newcommand{\code}[1]{{\fontfamily{pcr}\selectfont #1}}
 
 %Text typesetting
 %--------------------------------------------------------
@@ -36,8 +45,7 @@
 \usepackage{amssymb}
 \usepackage{url}
 
-%Standard sti at søge efter billeder
-\graphicspath{{Figurer/}}
+
 
 %Begin document
 %----------------------------------------------------------
@@ -52,11 +60,10 @@
 \vspace{4cm}
 \textbf{Handed in [April 20], [2013], by team no. [1]}\\~\\
 \begin{tabular}{ll}
-$[$Name 1$]$  & $[$Email address$]$ \\
-$[$Name 2$]$  & $[$Email address$]$ \\
-$[$Name 3$]$  & $[$Email address$]$ \\
-$[$Name 4$]$  & $[$Email address$]$ \\
-$[$Name 5$]$  & $[$Email address$]$ \\
+$[$Rasmus Bækgaard$]$  & $[$10893@iha.dk$]$ \\
+$[$Anders Kielsholm$]$  & $[$10749@iha.dk$]$ \\
+$[$Lasse Hansen$]$  & $[$10063@iha.dk$]$ \\
+$[$Mia Leth Sørensen$]$  & $[$10959@iha.dk$]$ \\
 \end{tabular}
 \vfill
 \textbf{Electrical and Computer Engineering}\\
